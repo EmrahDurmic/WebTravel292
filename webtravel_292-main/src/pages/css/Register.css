@@ -1,0 +1,48 @@
+.register-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-image: url('https://image.slidesdocs.com/responsive-images/background/experience-a-relaxing-vacation-with-this-3d-render-of-a-pink-airplane-window-and-scenic-sky-view-powerpoint-background_e26dcc3097__960_540.jpg'); /* Replace with your travel-themed background image */
+    background-size: cover;
+  }
+  
+  .register-title {
+    font-size: 36px;
+    color: #e665a5;
+    margin-bottom: 20px;
+  }
+  
+  .register-input {
+    margin-bottom: 20px;
+    padding: 10px;
+    border: none;
+    border-bottom: 2px solid #c02ac0;
+    background-color: transparent;
+    color: #e665a5;
+    font-size: 18px;
+    width: 300px;
+    outline: none;
+  }
+  
+  .register-input::placeholder {
+    color: #dd64dd;
+  }
+  
+  .login-button .register-button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #c02ac0;
+    color: #da9ce3;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    width: 300px;
+  }
+  
+  .login-button:hover, .register-button:hover {
+    background-color: #c02ac0;
+  }
