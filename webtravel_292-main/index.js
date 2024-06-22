@@ -8,7 +8,7 @@ const Korisnik = require('./models/Korisnik');
 
 
 
-mongoose.connect('mongodb+srv://terzicelma21:elmaelma@cluster0.0i0dg48.mongodb.net/')
+mongoose.connect('mongodb+srv://durmicemrah:emrah@cluster0.0i0dg48.mongodb.net/')
 .then(() => {
     console.log('Connected to database')
     dodajAdmin();
@@ -16,12 +16,12 @@ mongoose.connect('mongodb+srv://terzicelma21:elmaelma@cluster0.0i0dg48.mongodb.n
 
 async function dodajAdmin() {
   try {
-    const adminUser = await Korisnik.findOne({ email: "elmaterzic@example.com" });
+    const adminUser = await Korisnik.findOne({ email: "emrahdurmic@example.com" });
     if (!adminUser) {
       const newAdmin = new Korisnik({
-        korisnickoIme: "elmatAdmin",
+        korisnickoIme: "emrahAdmin",
         lozinka: "adminpass", 
-        email: "elma@example.com",
+        email: "emrah@example.com",
         uloga: "admin",
         aktivan: true
       });
